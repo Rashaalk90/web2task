@@ -70,6 +70,91 @@
       margin: 0 auto;
     }
 
+    .projects {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .projects h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 24px;
+      color: #f8bbd0;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: minmax(250px, 500px);
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: #334155;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      color: #f472b6;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: #cbd5e1;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .skills {
+      background-color: #1e293b;
+      text-align: center;
+    }
+
+    .skills h2 {
+      color: #f8bbd0;
+      margin-bottom: 20px;
+    }
+
+    .skills-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skill {
+      background-color: #334155;
+      padding: 10px 20px;
+      border-radius: 20px;
+      color: #f1f5f9;
+      font-size: 14px;
+    }
+
+    .contact {
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: #f8bbd0;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 18px;
+    }
+    
+    .contact a {
+      font-weight: bold;
+    }
+
     footer {
       background-color: #334155;
       text-align: center;
@@ -97,6 +182,39 @@
       <p>
         I am a third-year student at Tafila Technical University, majoring in Smart Devices Computing.
         I am passionate about web development, and my goal is to become a professional Web Developer.
+      </p>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Weather App</h3>
+          <p>
+            This project is a Weather Application developed using Android Studio and Kotlin. It displays the current weather and forecasts based on real-time data from an online API.
+          </p>
+          <a href="#" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">Java</div>
+        <div class="skill">Kotlin</div>
+        <div class="skill">Communication Skills</div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <p>
+        You can reach me at my email:
+        <br>
+        <a href="mailto:alkhawaldehrasha7@gmail.com">alkhawaldehrasha7@gmail.com</a>
       </p>
     </section>
   </main>
